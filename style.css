@@ -1,0 +1,549 @@
+body{
+    background-color: rgb(245, 245, 245);
+    /* background-color: #E5E5E5;; */
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.header_box{
+    border-bottom: 1px solid #DBDBDB;
+    background-color: white;
+
+    position: fixed;
+    width: 100%;
+
+    z-index: 1;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 10px;
+    height: 54px;
+
+    background-color: white;
+}
+
+.icone_insta{
+    font-size: 22px;
+}
+
+.logo_insta{   
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.logo_insta img {
+    width: 103px;
+    height: 29px;
+}
+
+.icone_e_logo_juntos{
+    display: none;
+}
+
+.pesquisa_header{
+    display: none;
+}
+
+.pesquisa_header input{
+    width: 215px;
+    height: 28px;
+    text-align: center;
+
+    border: 1px solid #DBDBDB;
+    background-color: rgb(250, 250, 250);
+    border-radius: 3px;
+}
+
+.navegacao_header div:nth-child(2){
+    display: none;
+}
+.navegacao_header div:nth-child(3){
+    display: none;
+}
+.navegacao_header div:nth-child(4){
+    display: none;
+}
+
+
+ion-icon{
+    width: 22px;
+    height: 22px;
+}
+
+.div_ocupa_espaco{
+    display: none;
+}
+
+/* --------------------------------------------------------------------------------------------------- */
+
+.main{
+    padding-top: 54px;
+}
+.storie_section{
+    background-color: rgb(252, 252, 252);
+    
+    height: 118px;
+    padding: 10px;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0 15px;
+
+    overflow: hidden;
+    border-radius: 3px;
+    position: relative;
+}
+
+
+.div_storie{
+    position: relative;
+}
+
+.storie{
+    width: 66px;
+    height: 66px;
+}
+
+.icone_storie{
+    width: 56px;
+    height: 56px;
+
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+
+.seta_storie{
+    display: none;
+    width: 26px;
+    height: 26px;
+
+    position: absolute;
+    top: 38px;
+    right: 5px;
+}
+
+/* ------------------------------------------------------------------------------------------------- */
+
+.sidebar{
+    display: none;
+}
+
+.card{
+    max-width: 614px;
+    min-height: 749px;
+    margin-bottom: 60px;
+
+    background-color:white;
+    border-top: 1px solid #DBDBDB;
+    border-bottom: 1px solid #DBDBDB;
+    
+    margin-top: 1px;
+}
+
+.top_card{  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 10px;
+}
+
+.top_card div{
+    display: flex;
+    align-items: center;
+    gap: 0 10px;
+}
+
+.top_card img{
+    height: 32px;
+    width: 32px;
+}
+
+.top_card h2{
+    font-size: 14px;
+    justify-self: flex-start;
+}
+
+.top_card ion-icon{
+    width: 15px;
+    height: 15px;
+}
+
+.img_card{
+    height: 612px;
+}
+
+.img_card img, video{
+    width: 100%;
+    height: 100%;
+}
+
+
+.button_card{
+    /* outline: 1px solid brown; */
+    height: 40px;
+
+    padding: 10px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.button_card div{
+    display: flex; 
+    justify-content: space-between;
+    gap: 0 10px;
+}
+
+.status_card div{
+    padding: 10px;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0 10px;
+}
+
+.status_card img{
+    width: 20px;
+    height: 20px;
+}
+
+.navegacao_footer{
+    padding: 15px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: white;
+
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+
+}
+
+
+@media (min-width: 615px) and (max-width: 935px){
+
+    .main{
+        padding-top: 58px;
+    }
+
+    .icone_e_logo_juntos{
+        display: initial;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        gap: 0 10px;
+    }
+
+    .icone_e_logo_juntos ion-icon{
+        padding-right: 5px;
+        border-right: 1px solid #DBDBDB;
+    }
+
+    .icone_e_logo_juntos img{
+        transform: translateY(3px);
+    }
+
+    .logo_insta{
+        display: none;
+    }
+    .icone_insta{
+        display: none;
+    }
+
+    .pesquisa_header{
+        display: initial;
+    }
+
+    .navegacao_header div:nth-child(2){
+        display: initial;
+    }
+    .navegacao_header div:nth-child(3){
+        display: initial;
+    }
+    .navegacao_header div:nth-child(4){
+        display: initial;
+    }
+
+    .navegacao_header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0 20px;
+    }
+
+
+    .content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    
+        gap: 20px 0;
+    }
+
+    .storie_section{
+        margin-top: 30px;
+        max-width: 612px;
+
+        border: 1px solid #DBDBDB;
+    }
+
+    .seta_storie{
+        display: initial;
+    }
+
+    .cards_section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card{
+        border: 1px solid #DBDBDB;
+        border-radius: 3px;
+    }
+
+    .navegacao_footer{
+        display: none;
+    }
+
+
+}
+
+
+@media (min-width: 936px){
+
+    .main{
+        padding-top: 58px;
+    }
+   
+    .header_box{
+        display: flex;
+        justify-content: center;
+    }
+
+    .header{     
+        width: 955px
+    }
+
+    .icone_e_logo_juntos{
+        display: initial;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        gap: 0 10px;
+    }
+
+    .icone_e_logo_juntos ion-icon{
+        padding-right: 5px;
+        border-right: 1px solid #DBDBDB;
+    }
+
+    .icone_e_logo_juntos img{
+        transform: translateY(3px);
+    }
+
+    .logo_insta{
+        display: none;
+    }
+    .icone_insta{
+        display: none;
+    }
+
+    .pesquisa_header{
+        display: initial;
+    }
+
+    .navegacao_header div:nth-child(2){
+        display: initial;
+    }
+    .navegacao_header div:nth-child(3){
+        display: initial;
+    }
+    .navegacao_header div:nth-child(4){
+        display: initial;
+    }
+
+
+    .navegacao_header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0 20px;
+    }
+
+    .main-box{
+        display: flex;
+        justify-content: center;
+    }
+
+    .main{
+        display: flex;
+        justify-content: center;
+
+        gap: 28px;
+
+        max-width: 935px;
+    }
+
+    .content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    
+        gap: 24px 0; 
+    }
+
+    .storie_section{
+        margin-top: 30px;
+        max-width: 612px;
+
+        
+
+        border: 1px solid #DBDBDB;
+    }
+
+    .seta_storie{
+        display: initial;
+    }
+
+    .card{
+        border: 1px solid #DBDBDB;
+        border-radius: 3px;
+    }
+
+    .cards_section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navegacao_footer{
+        display: none;
+    }
+
+    .div_ocupa_espaco{
+        display: initial;
+    }
+
+    .sidebar{
+        display: flex;
+        flex-direction: column;
+
+        gap: 25px;
+
+        margin-top: 40px;
+        padding: 20px 10px;
+        
+        width: 293px;
+    }
+
+    .top_sidebar{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .top_sidebar div:nth-child(2){
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .middle_sidebar{
+
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .element_middle_sidebar{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .flex{
+        display: flex;
+    }
+    .sp-bet{
+        justify-content: space-between;
+    }
+   
+    .gap-10{
+        gap: 10px;
+    }
+
+
+    .footer_sidebar{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .footer_sidebar p{
+        color: #C7C7C7;
+        font-size: 11px;
+        font-weight: 400;
+        line-height: 12.89px;
+    }
+
+
+    .negrito{
+        font-size: 14px;
+        font-weight: bold;
+        line-height: 16.41px;
+    }
+
+    .negrito-12px{
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 14.06px;
+    }
+
+
+    .cinza{
+        font-size: 12px;
+        font-weight: 400;
+        color:#8E8E8E;
+        line-height: 14.06px;
+    }
+
+    .plus{
+        font-weight: 500;
+    }
+
+    .cinza-14px{
+        font-size: 14px;
+        font-weight: 400;
+        color:#8E8E8E;
+        line-height: 16.41px;
+    }
+
+    .azul{
+        font-size: 12px;
+        font-weight: bold;
+        color: #139EF2;
+        line-height: 14.06px;
+    }
+
+}
